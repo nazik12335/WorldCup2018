@@ -46,6 +46,7 @@ class GroupsViewController: UIViewController {
     tableView.dataSource = self
     tableView.keyboardDismissMode = .onDrag
     tableView.translatesAutoresizingMaskIntoConstraints = false
+    tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
     
     view.addSubview(tableView)
     
@@ -76,11 +77,7 @@ class GroupsViewController: UIViewController {
 
 extension GroupsViewController: UITableViewDelegate, UITableViewDataSource {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    var cell:UITableViewCell!
-    
-    if cell == nil {
-      cell = UITableViewCell(style: .default, reuseIdentifier: "Cell")
-    }
+    let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
     cell.textLabel?.text = sectionsViewData?[indexPath.section].teams[indexPath.row].name ?? ""
     return cell
   }
