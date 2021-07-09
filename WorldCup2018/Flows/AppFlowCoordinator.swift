@@ -49,9 +49,6 @@ class AppFlowCoordinator {
   
 }
 
-typealias JSON = [String : Any]
-
-
 
 
 

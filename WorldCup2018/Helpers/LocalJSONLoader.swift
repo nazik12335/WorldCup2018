@@ -7,6 +7,8 @@
 
 import Foundation
 
+typealias JSON = [String : Any]
+
 protocol JSONLoader {
   func loadJSON(completion: ((JSON) throws ->())) throws
 }
