@@ -1,0 +1,778 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3CE54FC4269857C200EECDC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE54FC3269857C200EECDC9 /* AppDelegate.swift */; };
+		3CE54FC6269857C200EECDC9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE54FC5269857C200EECDC9 /* SceneDelegate.swift */; };
+		3CE54FC8269857C200EECDC9 /* AppFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE54FC7269857C200EECDC9 /* AppFlowCoordinator.swift */; };
+		3CE54FCB269857C200EECDC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CE54FC9269857C200EECDC9 /* Main.storyboard */; };
+		3CE54FCD269857C500EECDC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CE54FCC269857C500EECDC9 /* Assets.xcassets */; };
+		3CE54FD0269857C500EECDC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CE54FCE269857C500EECDC9 /* LaunchScreen.storyboard */; };
+		3CE54FDB269857C500EECDC9 /* WorldCup2018Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE54FDA269857C500EECDC9 /* WorldCup2018Tests.swift */; };
+		3CE54FE6269857C500EECDC9 /* WorldCup2018UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE54FE5269857C500EECDC9 /* WorldCup2018UITests.swift */; };
+		3CE550082698E78600EECDC9 /* WorldCup2018.json in Resources */ = {isa = PBXBuildFile; fileRef = 3CE550072698E78600EECDC9 /* WorldCup2018.json */; };
+		3CE550102698F02F00EECDC9 /* DependencyResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE5500F2698F02F00EECDC9 /* DependencyResolver.swift */; };
+		3CE550152698F05A00EECDC9 /* FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE550142698F05A00EECDC9 /* FileLoader.swift */; };
+		3CE5501A2698F07300EECDC9 /* LocalJSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE550192698F07300EECDC9 /* LocalJSONLoader.swift */; };
+		3CE5501F2698F09200EECDC9 /* GroupsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE5501E2698F09200EECDC9 /* GroupsRepository.swift */; };
+		3CE550242698F0AE00EECDC9 /* GroupParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE550232698F0AE00EECDC9 /* GroupParser.swift */; };
+		3CE550292698F0CA00EECDC9 /* TeamParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE550282698F0CA00EECDC9 /* TeamParser.swift */; };
+		3CE5502E2698F0DD00EECDC9 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE5502D2698F0DD00EECDC9 /* ImageLoader.swift */; };
+		3CE550332698F10600EECDC9 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE550322698F10600EECDC9 /* Group.swift */; };
+		3CE550382698F12B00EECDC9 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE550372698F12B00EECDC9 /* Team.swift */; };
+		3CE5503D2698F14700EECDC9 /* GroupsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE5503C2698F14700EECDC9 /* GroupsViewModel.swift */; };
+		3CE550422698F16700EECDC9 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE550412698F16700EECDC9 /* GroupsViewController.swift */; };
+		3CE550472698F18600EECDC9 /* TeamDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE550462698F18600EECDC9 /* TeamDetailViewModel.swift */; };
+		3CE5504C2698F19E00EECDC9 /* TeamDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE5504B2698F19E00EECDC9 /* TeamDetailViewController.swift */; };
+		3CE550582698F2A900EECDC9 /* Sequence+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE550572698F2A900EECDC9 /* Sequence+NSLayoutConstraint.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3CE54FD7269857C500EECDC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CE54FB8269857C200EECDC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CE54FBF269857C200EECDC9;
+			remoteInfo = WorldCup2018;
+		};
+		3CE54FE2269857C500EECDC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CE54FB8269857C200EECDC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CE54FBF269857C200EECDC9;
+			remoteInfo = WorldCup2018;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3CE54FC0269857C200EECDC9 /* WorldCup2018.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldCup2018.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CE54FC3269857C200EECDC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3CE54FC5269857C200EECDC9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3CE54FC7269857C200EECDC9 /* AppFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowCoordinator.swift; sourceTree = "<group>"; };
+		3CE54FCA269857C200EECDC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3CE54FCC269857C500EECDC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3CE54FCF269857C500EECDC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3CE54FD1269857C500EECDC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CE54FD6269857C500EECDC9 /* WorldCup2018Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldCup2018Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CE54FDA269857C500EECDC9 /* WorldCup2018Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCup2018Tests.swift; sourceTree = "<group>"; };
+		3CE54FDC269857C500EECDC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CE54FE1269857C500EECDC9 /* WorldCup2018UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldCup2018UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CE54FE5269857C500EECDC9 /* WorldCup2018UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCup2018UITests.swift; sourceTree = "<group>"; };
+		3CE54FE7269857C500EECDC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CE550072698E78600EECDC9 /* WorldCup2018.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WorldCup2018.json; sourceTree = "<group>"; };
+		3CE5500F2698F02F00EECDC9 /* DependencyResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyResolver.swift; sourceTree = "<group>"; };
+		3CE550142698F05A00EECDC9 /* FileLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileLoader.swift; sourceTree = "<group>"; };
+		3CE550192698F07300EECDC9 /* LocalJSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalJSONLoader.swift; sourceTree = "<group>"; };
+		3CE5501E2698F09200EECDC9 /* GroupsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsRepository.swift; sourceTree = "<group>"; };
+		3CE550232698F0AE00EECDC9 /* GroupParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupParser.swift; sourceTree = "<group>"; };
+		3CE550282698F0CA00EECDC9 /* TeamParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamParser.swift; sourceTree = "<group>"; };
+		3CE5502D2698F0DD00EECDC9 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		3CE550322698F10600EECDC9 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		3CE550372698F12B00EECDC9 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		3CE5503C2698F14700EECDC9 /* GroupsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewModel.swift; sourceTree = "<group>"; };
+		3CE550412698F16700EECDC9 /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
+		3CE550462698F18600EECDC9 /* TeamDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailViewModel.swift; sourceTree = "<group>"; };
+		3CE5504B2698F19E00EECDC9 /* TeamDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailViewController.swift; sourceTree = "<group>"; };
+		3CE550572698F2A900EECDC9 /* Sequence+NSLayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+NSLayoutConstraint.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CE54FBD269857C200EECDC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CE54FD3269857C500EECDC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CE54FDE269857C500EECDC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CE54FB7269857C200EECDC9 = {
+			isa = PBXGroup;
+			children = (
+				3CE54FC2269857C200EECDC9 /* WorldCup2018 */,
+				3CE54FD9269857C500EECDC9 /* WorldCup2018Tests */,
+				3CE54FE4269857C500EECDC9 /* WorldCup2018UITests */,
+				3CE54FC1269857C200EECDC9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3CE54FC1269857C200EECDC9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CE54FC0269857C200EECDC9 /* WorldCup2018.app */,
+				3CE54FD6269857C500EECDC9 /* WorldCup2018Tests.xctest */,
+				3CE54FE1269857C500EECDC9 /* WorldCup2018UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CE54FC2269857C200EECDC9 /* WorldCup2018 */ = {
+			isa = PBXGroup;
+			children = (
+				3CE550702698F3EA00EECDC9 /* LocalFiles */,
+				3CE550682698F3C200EECDC9 /* Supporting Files */,
+				3CE550672698F3A800EECDC9 /* Flows */,
+				3CE550772698F40F00EECDC9 /* Model */,
+				3CE5505F2698F32D00EECDC9 /* Screens */,
+				3CE550562698F1F100EECDC9 /* Extensions */,
+				3CE5507D2698F51300EECDC9 /* Helpers */,
+			);
+			path = WorldCup2018;
+			sourceTree = "<group>";
+		};
+		3CE54FD9269857C500EECDC9 /* WorldCup2018Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3CE54FDA269857C500EECDC9 /* WorldCup2018Tests.swift */,
+				3CE54FDC269857C500EECDC9 /* Info.plist */,
+			);
+			path = WorldCup2018Tests;
+			sourceTree = "<group>";
+		};
+		3CE54FE4269857C500EECDC9 /* WorldCup2018UITests */ = {
+			isa = PBXGroup;
+			children = (
+				3CE54FE5269857C500EECDC9 /* WorldCup2018UITests.swift */,
+				3CE54FE7269857C500EECDC9 /* Info.plist */,
+			);
+			path = WorldCup2018UITests;
+			sourceTree = "<group>";
+		};
+		3CE550562698F1F100EECDC9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3CE550572698F2A900EECDC9 /* Sequence+NSLayoutConstraint.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3CE5505F2698F32D00EECDC9 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				3CE550632698F33A00EECDC9 /* Groups */,
+				3CE550642698F34300EECDC9 /* TeamDetail */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		3CE550632698F33A00EECDC9 /* Groups */ = {
+			isa = PBXGroup;
+			children = (
+				3CE5503C2698F14700EECDC9 /* GroupsViewModel.swift */,
+				3CE550662698F36F00EECDC9 /* Views */,
+			);
+			path = Groups;
+			sourceTree = "<group>";
+		};
+		3CE550642698F34300EECDC9 /* TeamDetail */ = {
+			isa = PBXGroup;
+			children = (
+				3CE550462698F18600EECDC9 /* TeamDetailViewModel.swift */,
+				3CE550652698F36500EECDC9 /* Views */,
+			);
+			path = TeamDetail;
+			sourceTree = "<group>";
+		};
+		3CE550652698F36500EECDC9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3CE5504B2698F19E00EECDC9 /* TeamDetailViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3CE550662698F36F00EECDC9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3CE550412698F16700EECDC9 /* GroupsViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3CE550672698F3A800EECDC9 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				3CE54FC7269857C200EECDC9 /* AppFlowCoordinator.swift */,
+				3CE5500F2698F02F00EECDC9 /* DependencyResolver.swift */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		3CE550682698F3C200EECDC9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CE54FC3269857C200EECDC9 /* AppDelegate.swift */,
+				3CE54FC5269857C200EECDC9 /* SceneDelegate.swift */,
+				3CE54FC9269857C200EECDC9 /* Main.storyboard */,
+				3CE54FCC269857C500EECDC9 /* Assets.xcassets */,
+				3CE54FCE269857C500EECDC9 /* LaunchScreen.storyboard */,
+				3CE54FD1269857C500EECDC9 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3CE550702698F3EA00EECDC9 /* LocalFiles */ = {
+			isa = PBXGroup;
+			children = (
+				3CE550072698E78600EECDC9 /* WorldCup2018.json */,
+			);
+			path = LocalFiles;
+			sourceTree = "<group>";
+		};
+		3CE550772698F40F00EECDC9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3CE550792698F48200EECDC9 /* Group */,
+				3CE5507B2698F49000EECDC9 /* Team */,
+				3CE5507C2698F4BA00EECDC9 /* Parsers */,
+				3CE550782698F47300EECDC9 /* Repositories */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3CE550782698F47300EECDC9 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				3CE5501E2698F09200EECDC9 /* GroupsRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		3CE550792698F48200EECDC9 /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				3CE550322698F10600EECDC9 /* Group.swift */,
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
+		3CE5507B2698F49000EECDC9 /* Team */ = {
+			isa = PBXGroup;
+			children = (
+				3CE550372698F12B00EECDC9 /* Team.swift */,
+			);
+			path = Team;
+			sourceTree = "<group>";
+		};
+		3CE5507C2698F4BA00EECDC9 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				3CE550232698F0AE00EECDC9 /* GroupParser.swift */,
+				3CE550282698F0CA00EECDC9 /* TeamParser.swift */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		3CE5507D2698F51300EECDC9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3CE550142698F05A00EECDC9 /* FileLoader.swift */,
+				3CE550192698F07300EECDC9 /* LocalJSONLoader.swift */,
+				3CE5502D2698F0DD00EECDC9 /* ImageLoader.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CE54FBF269857C200EECDC9 /* WorldCup2018 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CE54FEA269857C500EECDC9 /* Build configuration list for PBXNativeTarget "WorldCup2018" */;
+			buildPhases = (
+				3CE54FBC269857C200EECDC9 /* Sources */,
+				3CE54FBD269857C200EECDC9 /* Frameworks */,
+				3CE54FBE269857C200EECDC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WorldCup2018;
+			productName = WorldCup2018;
+			productReference = 3CE54FC0269857C200EECDC9 /* WorldCup2018.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3CE54FD5269857C500EECDC9 /* WorldCup2018Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CE54FED269857C500EECDC9 /* Build configuration list for PBXNativeTarget "WorldCup2018Tests" */;
+			buildPhases = (
+				3CE54FD2269857C500EECDC9 /* Sources */,
+				3CE54FD3269857C500EECDC9 /* Frameworks */,
+				3CE54FD4269857C500EECDC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CE54FD8269857C500EECDC9 /* PBXTargetDependency */,
+			);
+			name = WorldCup2018Tests;
+			productName = WorldCup2018Tests;
+			productReference = 3CE54FD6269857C500EECDC9 /* WorldCup2018Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3CE54FE0269857C500EECDC9 /* WorldCup2018UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CE54FF0269857C500EECDC9 /* Build configuration list for PBXNativeTarget "WorldCup2018UITests" */;
+			buildPhases = (
+				3CE54FDD269857C500EECDC9 /* Sources */,
+				3CE54FDE269857C500EECDC9 /* Frameworks */,
+				3CE54FDF269857C500EECDC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CE54FE3269857C500EECDC9 /* PBXTargetDependency */,
+			);
+			name = WorldCup2018UITests;
+			productName = WorldCup2018UITests;
+			productReference = 3CE54FE1269857C500EECDC9 /* WorldCup2018UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CE54FB8269857C200EECDC9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					3CE54FBF269857C200EECDC9 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					3CE54FD5269857C500EECDC9 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 3CE54FBF269857C200EECDC9;
+					};
+					3CE54FE0269857C500EECDC9 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 3CE54FBF269857C200EECDC9;
+					};
+				};
+			};
+			buildConfigurationList = 3CE54FBB269857C200EECDC9 /* Build configuration list for PBXProject "WorldCup2018" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3CE54FB7269857C200EECDC9;
+			productRefGroup = 3CE54FC1269857C200EECDC9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CE54FBF269857C200EECDC9 /* WorldCup2018 */,
+				3CE54FD5269857C500EECDC9 /* WorldCup2018Tests */,
+				3CE54FE0269857C500EECDC9 /* WorldCup2018UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CE54FBE269857C200EECDC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CE550082698E78600EECDC9 /* WorldCup2018.json in Resources */,
+				3CE54FD0269857C500EECDC9 /* LaunchScreen.storyboard in Resources */,
+				3CE54FCD269857C500EECDC9 /* Assets.xcassets in Resources */,
+				3CE54FCB269857C200EECDC9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CE54FD4269857C500EECDC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CE54FDF269857C500EECDC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CE54FBC269857C200EECDC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CE550422698F16700EECDC9 /* GroupsViewController.swift in Sources */,
+				3CE550382698F12B00EECDC9 /* Team.swift in Sources */,
+				3CE550582698F2A900EECDC9 /* Sequence+NSLayoutConstraint.swift in Sources */,
+				3CE5504C2698F19E00EECDC9 /* TeamDetailViewController.swift in Sources */,
+				3CE550332698F10600EECDC9 /* Group.swift in Sources */,
+				3CE5501A2698F07300EECDC9 /* LocalJSONLoader.swift in Sources */,
+				3CE550472698F18600EECDC9 /* TeamDetailViewModel.swift in Sources */,
+				3CE550102698F02F00EECDC9 /* DependencyResolver.swift in Sources */,
+				3CE5502E2698F0DD00EECDC9 /* ImageLoader.swift in Sources */,
+				3CE54FC8269857C200EECDC9 /* AppFlowCoordinator.swift in Sources */,
+				3CE550292698F0CA00EECDC9 /* TeamParser.swift in Sources */,
+				3CE54FC4269857C200EECDC9 /* AppDelegate.swift in Sources */,
+				3CE54FC6269857C200EECDC9 /* SceneDelegate.swift in Sources */,
+				3CE5501F2698F09200EECDC9 /* GroupsRepository.swift in Sources */,
+				3CE550242698F0AE00EECDC9 /* GroupParser.swift in Sources */,
+				3CE5503D2698F14700EECDC9 /* GroupsViewModel.swift in Sources */,
+				3CE550152698F05A00EECDC9 /* FileLoader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CE54FD2269857C500EECDC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CE54FDB269857C500EECDC9 /* WorldCup2018Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CE54FDD269857C500EECDC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CE54FE6269857C500EECDC9 /* WorldCup2018UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3CE54FD8269857C500EECDC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CE54FBF269857C200EECDC9 /* WorldCup2018 */;
+			targetProxy = 3CE54FD7269857C500EECDC9 /* PBXContainerItemProxy */;
+		};
+		3CE54FE3269857C500EECDC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CE54FBF269857C200EECDC9 /* WorldCup2018 */;
+			targetProxy = 3CE54FE2269857C500EECDC9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3CE54FC9269857C200EECDC9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CE54FCA269857C200EECDC9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3CE54FCE269857C500EECDC9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CE54FCF269857C500EECDC9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3CE54FE8269857C500EECDC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3CE54FE9269857C500EECDC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3CE54FEB269857C500EECDC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZFT39P4T94;
+				INFOPLIST_FILE = "WorldCup2018/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nazarii.WorldCup2018;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3CE54FEC269857C500EECDC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZFT39P4T94;
+				INFOPLIST_FILE = "WorldCup2018/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nazarii.WorldCup2018;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3CE54FEE269857C500EECDC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WorldCup2018Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nazarii.WorldCup2018Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorldCup2018.app/WorldCup2018";
+			};
+			name = Debug;
+		};
+		3CE54FEF269857C500EECDC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WorldCup2018Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nazarii.WorldCup2018Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorldCup2018.app/WorldCup2018";
+			};
+			name = Release;
+		};
+		3CE54FF1269857C500EECDC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WorldCup2018UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nazarii.WorldCup2018UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WorldCup2018;
+			};
+			name = Debug;
+		};
+		3CE54FF2269857C500EECDC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WorldCup2018UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nazarii.WorldCup2018UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WorldCup2018;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CE54FBB269857C200EECDC9 /* Build configuration list for PBXProject "WorldCup2018" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CE54FE8269857C500EECDC9 /* Debug */,
+				3CE54FE9269857C500EECDC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CE54FEA269857C500EECDC9 /* Build configuration list for PBXNativeTarget "WorldCup2018" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CE54FEB269857C500EECDC9 /* Debug */,
+				3CE54FEC269857C500EECDC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CE54FED269857C500EECDC9 /* Build configuration list for PBXNativeTarget "WorldCup2018Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CE54FEE269857C500EECDC9 /* Debug */,
+				3CE54FEF269857C500EECDC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CE54FF0269857C500EECDC9 /* Build configuration list for PBXNativeTarget "WorldCup2018UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CE54FF1269857C500EECDC9 /* Debug */,
+				3CE54FF2269857C500EECDC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3CE54FB8269857C200EECDC9 /* Project object */;
+}
