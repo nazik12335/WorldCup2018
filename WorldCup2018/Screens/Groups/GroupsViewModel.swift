@@ -16,9 +16,6 @@ struct SectionViewData {
   var teams: [TeamCellViewData]
 }
 
-/// Groups
-
-// ViewModel
 class GroupsViewModel {
   
   var onSelectItemSignal: ((Team)->())?
